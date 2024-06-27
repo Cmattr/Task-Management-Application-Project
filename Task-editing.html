@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit task</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: black;">Menu:</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task-menu.html">Task</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account-log-in.html">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main style="font-family: 'Times New Roman', Times, serif;">
+        <div class="content container my-5">
+            <div class="row my-5 justify-content-center">
+                <div class="col-10 card shadow-lg p-3 my-4 mx-4 bg-light rounded" style="border: 2px ridge grey;">
+                    <div class="card-body">
+                        
+                    </div>
+                    <H2 class="my-4 align-self-center">Edit Task</H2>
+                    <form action="/submit" method="post" class="p-3 rounded needs-validation" novalidate>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="task" name="task" placeholder="Task Name" required>
+                            <label for="first">Enter existing task name:</label>
+                            <div class="valid-feedback">Looks Good!</div>
+                            <div class="invalid-feedback">please enter a task</div>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <label for="details">Edit details:</label>
+                            <input type="textbox" class="form-control" id="details" name="details" placeholder="Enter Details here" style="height: 200px;">
+                            <div class="valid-feedback">Looks Good!</div>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="completion" name="completion" placeholder="Complete by:" required>
+                            <label for="birth">Edit completion date:</label>
+                            <div class="valid-feedback">Looks Good!</div>
+                            <div class="invalid-feedback">Please enter your Date of birth.</div>
+                        </div>
+
+                        <div class="btn-group my-3" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck1">Completed</label>
+                        </div>
+                        
+                        <br>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="submit" class="btn btn-primary my-4">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

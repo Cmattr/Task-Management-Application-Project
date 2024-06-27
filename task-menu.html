@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        main {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: black;">Menu:</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Homepage.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="account-log-in.html">Account</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content container my-5" style="font-family: 'Times New Roman', Times, serif;">
+        <main>
+            <div class="row my-5">
+                <div class="col-9 card shadow-lg p-3 mb-2 bg-light rounded" style="border: 2px ridge grey;">
+                    <img src="Task.png" class="card-img-top" alt="Add Task">
+                    <div class="card-body">
+                        <h3>Add Task</h3>
+                        <p style="color: gray;">Add a new task to your to do list.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="task-creation.html" role="button">Click Here</a>
+                    </div>
+                </div>
+            </div> 
+   
+            <div class="row my-5">
+                <div class="col-9 card shadow-lg p-3 mb-2 bg-light rounded" style="border: 2px ridge grey;">
+                    <img src="to-do-list.png" class="card-img-top" alt="To do list">
+                    <div class="card-body">
+                        <h3>View Task</h3>
+                        <p style="color: gray;">Here you can view your task</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="Task-details.html" role="button">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-9 card shadow-lg p-3 mb-2 bg-light rounded" style="border: 2px ridge grey;">
+                    <img src="update.png" class="card-img-top" alt="Update">
+                    <div class="card-body">
+                        <h3>Update</h3>
+                        <p style="color: gray;">Update a current task</p>
+                        <div>
+                            <a class="btn btn-primary" href="Task-editing.html" role="button">Click Here</a>
+                        </div>
+                </div>
+            </div>
+        </main>
+        
+        <aside style="font-family: 'Times New Roman', Times, serif;">
+            <div class="container my-5">
+                <div class="row align-self-end">
+                    <div class="col-12 align-self-end shadow-lg p-3 mb-5 bg-light rounded" style="background-color: gray;  border: 2px line grey;">
+                        <h2>Task Homepage</h2>
+                        <blockquote>
+                            Welcome to the task management system.
+                            This page will allow you to create new tasks, view current tasks and update tasks or mark them complete.
+                            For any questions, comments, or concerns please contact us at the information listed below.
+                        </blockquote>
+                        <div class="card">
+                            <div class="card-body">
+                              <h3 class="h4">Contact us at:</h3>
+                              <p>Phone:</p>
+                              <P style="color: rgb(51, 178, 228);">502-555-5555</P>
+                              <p>Email:</p>
+                              <p style="color: rgb(51, 178, 228);">Generic@email.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+</body>
+</html>
